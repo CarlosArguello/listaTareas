@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-dist/
+#dist/
 npm-debug.log
 yarn-error.log
 
@@ -10,3 +10,10 @@ yarn-error.log
 *.ntvs*
 *.njsproj
 *.sln
+
+#Cambios mios
+*.json
+*.babelrc
+*.editorconfig
+*.md
+webpack.config*
