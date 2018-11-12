@@ -16,12 +16,17 @@
                                     p(v-if="!item.editar",:class="item.estado?'activo':''") {{item.nombre}}
                                     template(v-else)
                                         input(v-model="editarT" autofocus @keyup.enter="guardarEditarTarea(index)").form-control
-                                        button.btn.btn-primary.btn-md(@click="guardarEditarTarea(index)").material-icons save
-                                        button.btn.btn-danger(@click="cancelarEditarTarea(index)").material-icons block
-                                span.material-icons
-                                    button.btn.btn-success.text-white.mr-2.btn-sm(@click="item.estado=!item.estado") done
-                                    button.btn.btn-warning.mr-2.btn-sm(@click="editarTarea(index)") create
-                                    button.btn.btn-danger.text-white.btn-sm(@click="eliminarTarea(index)") delete
+                                        button.btn.btn-primary.btn-sm(@click="guardarEditarTarea(index)")
+                                            i.fas.fa-save
+                                        button.btn.btn-danger.btn-sm(@click="cancelarEditarTarea(index)")
+                                            i.fas.fa-times
+                                span
+                                    button.btn.btn-success.text-white.mr-2.btn-sm(@click="item.estado=!item.estado")
+                                        i.fas.fa-check
+                                    button.btn.btn-warning.mr-2.btn-sm(@click="editarTarea(index)")
+                                        i.fas.fa-pencil-alt
+                                    button.btn.btn-danger.text-white.btn-sm(@click="eliminarTarea(index)") 
+                                        i.fas.fa-trash-alt
                                 
 
                     .d-flex.justify-content-center
@@ -88,4 +93,5 @@
         color : #ccc;
         text-decoration:line-through; 
     }
+
 </style>
