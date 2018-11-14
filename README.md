@@ -1,18 +1,18 @@
-# appsimplevue
+# Aplicacion Vue
+> Aplicacion simple con webpack en vue 2
 
-> aplicacion simple con webpack en vue 2
 
-## Build Setup
+## Recordar
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+#### Instalar dependencias
+    npm install
 
-# build for production with minification
-npm run build
-```
+#### El servidor se creara y abrira en localhost:8080
+    npm run dev
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#### Empaquetado y minificacion del archivo
+    npm run build
+
+
+Ir a [Lista de Tareas](https://carlosarguello.github.io/listaTareas/).
